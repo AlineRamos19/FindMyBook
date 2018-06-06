@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="36dp"
+    android:layout_marginEnd="36dp"
+    android:layout_marginBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:id="@+id/image_book_dialog"
+        tools:src="@drawable/img_tool"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_dialog"
+        tools:text="Android Essencial"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/author_dialog"
+        tools:text="Ricardo Lechetta"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"/>
+
+
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/snnipet_dialog"
+        tools:text="O Android é o sistema operacional móvel mais utilizado no mundo, e o objetivo deste livro é apresentar ao leitor os conceitos essenciais do desenvolvimento de aplicativos para Android,"
+        android:gravity="center"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sale_dialog"
+        android:text="Ver na loja"
+        android:gravity="end"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/colorAccent"/>
+
+</LinearLayout>

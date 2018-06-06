@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_find"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.android.aline.findmybook.activity.FindActivity">
+
+
+    <include
+        android:id="@+id/toolbar_find"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/label_find_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/label_find_your_book"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_find" />
+
+    <EditText
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="#26880E4F"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/edit_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edit_book"
+        android:hint="@string/hint_write_here"
+        android:inputType="textCapCharacters|text"
+        android:maxLines="1"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/label_find_book" />
+
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/btn_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn_state"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/btn_find"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/edit_book" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+

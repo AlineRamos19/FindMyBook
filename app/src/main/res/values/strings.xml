@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Find My Book</string>
+    <string name="label_find_your_book">Insira o nome do livro ou autor que encontraremos para você :)</string>
+    <string name="hint_write_here">Digite aqui</string>
+    <string name="btn_find">BUSCAR</string>
+</resources>
