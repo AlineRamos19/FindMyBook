@@ -3,4 +3,13 @@
     <string name="label_find_your_book">Insira o nome do livro ou autor que encontraremos para você :)</string>
     <string name="hint_write_here">Digite aqui</string>
     <string name="btn_find">BUSCAR</string>
+    <string name="content_description">Image of book</string>
+    <string name="see_in_store">Ver na loja</string>
+    <string name="title_toolbar_livros">Livros</string>
+    <string name="label_check_words">Por favor, verifique a ortografia e tente novamente.</string>
+    <string name="book_not_found">Livro não encontrado</string>
+    <string name="try_again">refazer pesquisa</string>
+    <string name="title_toolbar_find">FIND</string>
+    <string name="put_information">Favor inserir alguma informação.</string>
+
 </resources>

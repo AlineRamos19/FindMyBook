@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="24dp"
+    tools:context=".activity.BookNotFoundFragment">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_booknotfound"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12sp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/book_not_found"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/label_check_words"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/try_again"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/try_again"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="14sp"
+        android:textStyle="italic|bold"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

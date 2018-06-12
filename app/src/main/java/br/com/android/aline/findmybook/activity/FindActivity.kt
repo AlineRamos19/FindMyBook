@@ -28,7 +28,7 @@ class FindActivity : AppCompatActivity(), FindView {
 
         setSupportActionBar(toolbar_find as Toolbar?)
         supportActionBar!!.setDisplayShowTitleEnabled(true)
-       title_toolbar_book.text = "FIND"
+       title_toolbar_book.text = getString(R.string.title_toolbar_find)
     }
 
     override fun onStart() {
@@ -39,7 +39,7 @@ class FindActivity : AppCompatActivity(), FindView {
     private fun checkEdit() {
 
         btn_find.setOnClickListener {
-            btn_find.setTextColor(resources.getColor(android.R.color.white))
+            
             strBook = edit_book.text.toString()
 
             val checkNetwork: Boolean = presenter.checkNetwork()
@@ -49,12 +49,12 @@ class FindActivity : AppCompatActivity(), FindView {
                     intent.putExtra("bookUser", strBook)
                     startActivity(intent)
                 } else {
-                    showMessage("Favor inserir alguma informação.")
+                    showMessage(getString(R.string.put_information))
                 }
             } else {
                 val builder = AlertDialog.Builder(this@FindActivity)
                 builder.setTitle("Atenção")
-                builder.setMessage("Nenhuma rede disponivel.\nVerifique conexão e " +
+                builder.setMessage("Nenhuma rede disponível.\nVerifique a conexão e " +
                         "tente novamente.")
                 builder.setPositiveButton("Ok"){
                     dialog, i ->

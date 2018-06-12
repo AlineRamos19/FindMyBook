@@ -52,11 +52,12 @@ class BooksListActivity : AppCompatActivity(), BookListView {
         progress_bar.visibility = View.INVISIBLE
 
         if (list != null) {
-            title_toolbar_book.setText("Livros")
+            title_toolbar_book.setText(getString(R.string.title_toolbar_livros))
             val adapter = BookListAdapter(list, context)
             recycler.adapter = adapter
         } else {
-            not_found.visibility = View.VISIBLE
+            val bookNotFoundFragment = BookNotFoundFragment()
+            supportFragmentManager.beginTransaction().replace(R.id.frag_book_not_found, bookNotFoundFragment).commit()
             title_toolbar_book.setText("")
         }
     }

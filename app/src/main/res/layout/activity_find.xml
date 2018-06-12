@@ -49,7 +49,7 @@
 
 
     <TextView
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@drawable/state_color"
         android:fontFamily="sans-serif-thin"
         android:id="@+id/btn_find"
         android:layout_width="match_parent"

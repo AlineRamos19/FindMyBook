@@ -42,23 +42,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:background="@drawable/book_not_found"
-        android:padding="24dp"
-        android:drawableTop="@drawable/placeholder"
-        android:id="@+id/not_found"
-        android:textSize="18sp"
-        android:layout_width="0dp"
+    <FrameLayout
+        android:id="@+id/frag_book_not_found"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:text="Nenhum livro encontrado, favor verificar ortografia e tentar novamente."
-        android:textAlignment="center"
-        android:visibility="invisible"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_list" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+
 
 
 
